@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anchor - hr - br And Pre Tag</title>
+  </head>
+  <body>
+    <h1>
+      Example Of Anchor Tag And Horizontal Line (hr) Tag Is Demonstrated Below
+    </h1>
+    <a href="https://www.google.com"
+      >Click Here To Google (Made Using Anchor Tag In HTML)
+    </a>
+    <hr />
+    <h2>
+      Exmple Of A Python Program (Using Pre Tag Which Shows Anything And
+      Everything As It Is Written) Which Copies Everything Whenever A Pendrive
+      Is Connected To The System
+    </h2>
+    <pre>
+        import shutil
+        import psutil
+        import os
+
+        print("This programme copies everything from your pendrive")
+
+        def cheeck(path):
+            if os.path.isfile(path):
+                return False
+            else:
+                return True
+
+
+        while True:
+            devices = psutil.disk_partitions()
+            hello = False
+            for device in devices:
+                if device.opts == "rw,removable":
+                    var = device.mountpoint
+                    hello = True
+            if hello == True:
+                break
+        if hello == True:
+            lists = os.listdir(var)
+            for l in lists:
+                if l == "System Volume Information":
+                    pass
+                else:
+                    if cheeck(var+l) == False:
+                        shutil.copy(var+l, os.getcwd())
+                    else:
+                        shutil.copytree(var+l, os.getcwd()+f"\\{l}")
+            print("Everything is copied from your pendrive to the current working directory.")
+
+        else:
+            print("Pendrive Is Unplugged")
+    </pre>
+    <hr />
+    <h3>
+      Example Of Br Tag Which Breaks Line Whenever Br Tag Is Used Which Is
+      Demonstrated In Below Paragraph
+    </h3>
+    <p>
+      Lorem ipsum dolor sit <br />
+      amet consectetur adipisicing elit. Quas, aspernatur?
+    </p>
+  </body>
+</html>

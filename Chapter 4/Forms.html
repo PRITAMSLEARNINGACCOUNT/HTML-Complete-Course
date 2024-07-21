@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms - HTML</title>
+  </head>
+  <body>
+    <div>
+      <form action="Take_Action.php">
+        <label for="UniqueIdentifierForCheeckbox">
+          <input
+            type="checkbox"
+            name="FormInput_1"
+            id="UniqueIdentifierForCheeckbox"
+          />Cheeckbox
+        </label>
+        <label for="FormInput_2">Enter Your Name</label>
+        <input
+          type="text"
+          name="FormInput_1"
+          id="UniqueIdentifierForName"
+          placeholder="Enter Your Name"
+        />
+        <label for="FormInput_3">Enter Your Email Address</label>
+        <input
+          type="email"
+          name="FormInput_1"
+          id="UniqueIdentifierForEmail"
+          placeholder="Please Enter Your Email Here"
+        />
+        <label for="UniqueIdentifierForRadioButtons">
+          <input
+            type="radio"
+            name="FormInput_4"
+            id="UniqueIdentifierForRadioButtons"
+          />
+          Male
+        </label>
+        <label for="UniqueIdentifierForRadioButtons2">
+          <input
+            type="radio"
+            name="FormInput_4"
+            id="UniqueIdentifierForRadioButtons2"
+          />
+          Female
+        </label>
+        <br />
+        <label for="UniqueIdentifierForTextarea">
+          Write Something About You Love
+          <textarea
+            name="textarea"
+            id="UniqueIdentifierForTextarea"
+            placeholder="Write About Something In Breif"
+            cols="100"
+          ></textarea>
+          <br>
+          <label for="UniqueIdentifierForSelection">
+            Selection Section
+            <select name="Selection" id="UniqueIdentifierForSelection">
+              <option value="Value 1">Value 1</option>
+              <option value="Value 2">Value 2</option>
+              <option value="Value 3">Value 3</option>
+            </select></label
+          >
+        </label>
+      </form>
+    </div>
+  </body>
+</html>
